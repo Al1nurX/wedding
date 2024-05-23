@@ -1,0 +1,48 @@
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+.main {
+  background-image: url("../../../public/images/marryImage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.shimmer-text {
+  color: transparent;
+  background: linear-gradient(to right, #7c150c, #9b0a0a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shimmer 5s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 10s linear infinite;
+}
+
+.muzik {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
