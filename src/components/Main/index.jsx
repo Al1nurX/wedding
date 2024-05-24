@@ -60,6 +60,10 @@ export default function Main() {
                 src={strelka}
                 alt="scroll down"
               />
+              <div className="text-white">
+                <p>Төмен</p>
+                <p>Түсіріңіз</p>
+              </div>
             </button>
           </div>
         </div>

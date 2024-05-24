@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Main from "../components/Main";
 import flower from "../../public/images/flower.png";
@@ -10,8 +11,18 @@ import toi2 from "../../public/images/toi2.png";
 import Social from "../components/social";
 import insta from "../../public/images/insta.png";
 import gis from "../../public/images/gis.jpeg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <div className="flex flex-col text-center ">
       <Main />
@@ -22,7 +33,10 @@ export default function Home() {
         src={flower}
         alt="logo"
       />
-      <div className="mt-[-150px] text-center text-xl leading-normal">
+      <div
+        className="mt-[-150px] text-center text-xl leading-normal"
+        data-aos="fade-up"
+      >
         <p>Құрметті ағайын-туыс</p>
         <p> бауырлар,</p>
         <p>құда-жекжат, нағашылар,</p>
@@ -37,7 +51,10 @@ export default function Home() {
         height={100}
       />
 
-      <div className="mt-[-50px] text-2xl text-center leading-normal">
+      <div
+        className="mt-[-50px] text-2xl text-center leading-normal"
+        data-aos="fade-up"
+      >
         <p>Cіз(дер)ді ұлымыз</p>
         <h2 className="text-4xl font color ">Жанибек</h2>
         <p>пен келініміз</p>
@@ -55,7 +72,10 @@ export default function Home() {
         width={140}
         height={140}
       />
-      <div className="mt-[-50px] text-2xl leading-relaxed color text-center font">
+      <div
+        className="mt-[-50px] text-2xl leading-relaxed color text-center font"
+        data-aos="fade-up"
+      >
         <p>той салтанаты:</p>
         <p>22 маусым 2024 жыл</p>
         <p>сағат 18:00 БАСТАЛАДЫ</p>
@@ -76,7 +96,10 @@ export default function Home() {
         height={150}
       />
 
-      <div className="mt-[-50px] text-3xl leading-relaxed font">
+      <div
+        className="mt-[-50px] text-3xl leading-relaxed font"
+        data-aos="fade-up"
+      >
         <h2>Той иелері:</h2>
         <h2 className="color">Қайырбек - Марал</h2>
       </div>
@@ -84,7 +107,7 @@ export default function Home() {
       <p className="mt-[50px] text-2xl">Тойға дейін</p>
       <Date />
 
-      <div className="mt-20 text-3xl leading-relaxed font">
+      <div className="mt-20 text-3xl leading-relaxed font" data-aos="fade-up">
         <p>Мекен-жайымыз:</p>
         <p>Талдықорған қаласы</p>
         <p>Желтоқсан көшесі</p>
@@ -93,24 +116,28 @@ export default function Home() {
       </div>
 
       <div className="flex justify-center gap-10">
-        <Image
-          className="mt-5 mb-10"
-          height={50}
-          width={50}
-          src={insta}
-          alt="calendar"
-        />
-        <Image
-          className="mt-5 mb-10 gis"
-          height={50}
-          width={50}
-          src={gis}
-          alt="calendar"
-        />
+        <a href="https://www.instagram.com/dastarkhan_ball_room1/">
+          <Image
+            className="mt-5 mb-10"
+            height={50}
+            width={50}
+            src={insta}
+            alt="Instagram"
+          />
+        </a>
+        <a href="https://2gis.kz/almaty/firm/70000001054903375">
+          <Image
+            className="mt-5 mb-10 gis"
+            height={50}
+            width={50}
+            src={gis}
+            alt="GIS"
+          />
+        </a>
       </div>
 
       <h2 className="mt-5 mb-5 text-3xl ">Той хештегі</h2>
-      <div className="text-center text-xl leading-normal">
+      <div className="text-center text-xl leading-normal" data-aos="fade-up">
         <p>Ерер инстаграмм немесе басқа</p>
         <p>әлеуметтік желідерде</p>
         <p>бөлісеңіз,сіздерді осы хештегті</p>
@@ -128,7 +155,7 @@ export default function Home() {
             src={toi}
             alt="calendar"
           />
-          <div className="mt-[-25px] font">
+          <div className="mt-[-25px] font" data-aos="fade-up">
             <p>Ерлер қауымы</p>
             <p>Классикалық</p>
             <p>Костюм</p>
@@ -143,16 +170,18 @@ export default function Home() {
             src={toi2}
             alt="calendar"
           />
-           <div className="mt-[-25px] font">
-          <p>Әйелдер қауымы</p>
-          <p>Кешкі көйлек</p>
+          <div className="mt-[-25px] font" data-aos="fade-up">
+            <p>Әйелдер қауымы</p>
+            <p>Кешкі көйлек</p>
           </div>
         </div>
       </div>
       <Attendance />
 
       <h2 className="mt-5  text-3xl color font">Мұратовтар әулетті </h2>
-      <p className="text-2xl leading-relaxed mb-10 color font">сіздерді күтеді!</p>
+      <p className="text-2xl leading-relaxed mb-10 color font">
+        сіздерді күтеді!
+      </p>
     </div>
   );
 }

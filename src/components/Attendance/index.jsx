@@ -120,7 +120,7 @@ export default function Attendance() {
                 </label>
               </div>
             </div>
-            <div className="flex-1  flex justify-center min-w-[300px]: mx-5">
+            <div className="flex-1  flex justify-center min-w-[300px]: mx-5 text-white">
               <button
                 className={styles.button}
                 type="submit"
