@@ -7,6 +7,8 @@ import Attendance from "../components/Attendance";
 import Date from "../components/Date";
 import insta from "../../public/images/insta.png";
 import gis from "../../public/images/gis.png";
+import toi from "../../public/images/toi.png";
+import toi2 from "../../public/images/toi2.png";
 
 export default function Home() {
   return (
@@ -74,14 +76,14 @@ export default function Home() {
       />
 
       <div className="mt-[-50px] text-3xl leading-relaxed">
-        <h2>Той иелері</h2>
+        <h2>Той иелері:</h2>
         <h2>Қайырбек - Марал</h2>
       </div>
 
       <p className="mt-[50px] text-2xl">Тойға дейін</p>
       <Date />
 
-      <div className="mt-20">
+      <div className="mt-20 text-2xl leading-relaxed">
         <p>Мекен-жайымыз:</p>
         <p>Талдықорған қаласы</p>
         <p>Желтоқсан көшесі</p>
@@ -89,41 +91,46 @@ export default function Home() {
         <p>Мейрамханасы</p>
       </div>
 
-      <div className="flex justify-center gap-20 mt-10 mb-10">
-        <Image className=" " height={30} width={80} src={gis} alt="gis" />
+      <div className="flex justify-center gap-5 mt-5 mb-5">
         <Image className=" " height={100} width={80} src={insta} alt="insta" />
+        <Image className=" " height={30} width={80} src={gis} alt="gis" />
       </div>
 
-      <h2 className="mt-5 mb-5">Той хештегі</h2>
-      <div className="text-center">
+      <h2 className="mt-5 mb-5 text-3xl">Той хештегі</h2>
+      <div className="text-center text-xl leading-normal">
         <p>Ерер инстаграмм немесе басқа</p>
         <p>әлеуметтік желідерде</p>
         <p>бөлісеңіз,сіздерді осы хештегті</p>
         <p>қолдануды сұраймыз</p>
-        <h3>#Жанибек_Индира</h3>
+        <h3 className="text-4xl mt-5">#Жанибек_Индира</h3>
       </div>
 
-      <h2 className="mt-20">Дресс код</h2>
-      <div>
-        <Image
-          className="mt-10 mb-10 "
-          height={40}
-          width={40}
-          src={calendar}
-          alt="calendar"
-        />
-        <Image
-          className="mt-10 mb-10 "
-          height={40}
-          width={40}
-          src={calendar}
-          alt="calendar"
-        />
+      <h2 className="mt-20 mb-5 text-3xl">Дресс код:</h2>
+      <div className="flex justify-center gap-20">
+        <div>
+          <Image
+            className="mt-10 mb-10 "
+            height={100}
+            width={100}
+            src={toi}
+            alt="calendar"
+          />
+        </div>
+
+        <div>
+          <Image
+            className="mt-10 mb-10 "
+            height={100}
+            width={100}
+            src={toi2}
+            alt="calendar"
+          />
+        </div>
       </div>
       <Attendance />
 
-      <h2>Мұратовтар әулетті </h2>
-      <p>сіздерді күтеді</p>
+      <h2 className="mt-5 mb-5 text-3xl">Мұратовтар әулетті </h2>
+      <p className="text-2xl leading-relaxed mb-10">сіздерді күтеді</p>
     </div>
   );
 }

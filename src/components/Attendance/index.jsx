@@ -52,15 +52,15 @@ export default function Attendance() {
     <div className={styles.App}>
       <div className="form center mb-20 mt-10">
         <p
-          className={`${styles.anketa} , text-center min-w-[300px] text-[22px] sm:text-[22px] mb-[10px] `}
+          className={`${styles.anketa} , text-center min-w-[300px] text-[26px] sm:text-[26px] mb-[10px] `}
         >
-          Анкетаны толтыруыңызды сұраймыз
+          Тойға келетіңізді
         </p>
 
         <p
-          className={`${styles.anketa} text-center min-w-[300px] text-[22px] sm:text-[22px] mb-[10px]`}
+          className={`${styles.anketa} text-center min-w-[300px] text-[18px] sm:text-[20px]  mb-[10px]`}
         >
-          Біз үшін өте маңызды!
+          Растауыңызды сұраймыз!
         </p>
         <div className="min-w-[300px]: mx-[20px] sm: mx-auto relative mt-6">
           <form className="form" onSubmit={(e) => Submit(e)}>

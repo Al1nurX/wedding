@@ -31,16 +31,22 @@ function DateComponent() {
   return (
     <div className={styles.container}>
       <div className={styles.timeRow}>
-        <span>{remainingTime.days}</span>
-        <span>{remainingTime.hours}</span>
-        <span>{remainingTime.minutes}</span>
-        <span>{remainingTime.seconds}</span>
-      </div>
-      <div className={styles.labelRow}>
-        <span>күн</span>
-        <span>сағат</span>
-        <span>минут</span>
-        <span>секунд</span>
+        <div className={styles.timeItem}>
+          <span className={styles.time}>{remainingTime.days}</span>
+          <span className={styles.label}>күн</span>
+        </div>
+        <div className={styles.timeItem}>
+          <span className={styles.time}>{remainingTime.hours}</span>
+          <span className={styles.label}>сағат</span>
+        </div>
+        <div className={styles.timeItem}>
+          <span className={styles.time}>{remainingTime.minutes}</span>
+          <span className={styles.label}>минут</span>
+        </div>
+        <div className={styles.timeItem}>
+          <span className={styles.time}>{remainingTime.seconds}</span>
+          <span className={styles.label}>секунд</span>
+        </div>
       </div>
     </div>
   );

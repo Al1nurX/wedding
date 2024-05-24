@@ -4,5 +4,11 @@
 
 body {
     margin: 0;
-    background-image: url('../../public/images/back.webp');
+    /* background-image: url('../../public/images/back.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff; */
 }
