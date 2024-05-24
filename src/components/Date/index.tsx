@@ -15,7 +15,7 @@ function DateComponent() {
   }, []);
 
   function calculateRemainingTime() {
-    const date = new Date(2024, 7, 5);
+    const date = new Date(2024, 7,22);
     const difference = date.getTime() - new Date().getTime();
 
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));

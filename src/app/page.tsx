@@ -16,6 +16,8 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 
+import heart from "../../public/images/heart.png";
+
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -56,9 +58,9 @@ export default function Home() {
         data-aos="fade-up"
       >
         <p>Cіз(дер)ді ұлымыз</p>
-        <h2 className="text-4xl font color ">Жанибек</h2>
+        <h2 className="text-4xl font color ">Алмас</h2>
         <p>пен келініміз</p>
-        <h2 className="text-4xl color font">Индираның</h2>
+        <h2 className="text-4xl color font">Арай</h2>
         <p>Үйлену тойына арналған</p>
         <p>Салтанатты ақ</p>
         <p>дастарханымыздың</p>
@@ -77,7 +79,7 @@ export default function Home() {
         data-aos="fade-up"
       >
         <p>той салтанаты:</p>
-        <p>22 маусым 2024 жыл</p>
+        <p>22 шілдке 2024 жыл</p>
         <p>сағат 18:00 БАСТАЛАДЫ</p>
       </div>
 
@@ -88,6 +90,14 @@ export default function Home() {
         src={calendar}
         alt="calendar"
       />
+      <Image
+        className="heart"
+        height={25}
+        width={25}
+        src={heart.src}
+        alt="calendar"
+      />
+
       <Image
         className="mx-auto mt-[-150px]"
         src={flowerSecond}
@@ -101,10 +111,10 @@ export default function Home() {
         data-aos="fade-up"
       >
         <h2>Той иелері:</h2>
-        <h2 className="color">Қайырбек - Марал</h2>
+        <h2 className="color">Жанатбек - Жұлдыз</h2>
       </div>
 
-      <p className="mt-[50px] text-2xl">Тойға дейін</p>
+      <p className="mt-[50px] text-2xl">Тойға дейін:</p>
       <Date />
 
       <div className="mt-20 text-3xl leading-relaxed font" data-aos="fade-up">
@@ -142,7 +152,7 @@ export default function Home() {
         <p>әлеуметтік желідерде</p>
         <p>бөлісеңіз,сіздерді осы хештегті</p>
         <p>қолдануды сұраймыз</p>
-        <h3 className="text-4xl mt-5 font">#Жанибек_Индира</h3>
+        <h3 className="text-4xl mt-5 font">#Алмас_Арай</h3>
       </div>
 
       <h2 className="mt-20 mb-5 text-3xl">Дресс код:</h2>
@@ -178,7 +188,7 @@ export default function Home() {
       </div>
       <Attendance />
 
-      <h2 className="mt-5  text-3xl color font">Мұратовтар әулетті </h2>
+      <h2 className="mt-5  text-3xl color font">Оспановтар әулетті </h2>
       <p className="text-2xl leading-relaxed mb-10 color font">
         сіздерді күтеді!
       </p>

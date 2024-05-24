@@ -40,7 +40,7 @@ export default function Main() {
       <div className={`${styles.main} flex flex-col items-center`}>
         <div className="absolute">
           <div className="flex flex-col text-center text-slate-100 mt-[150px] ">
-            <h1 className="text-4xl font">Жанибек & Индира</h1>
+            <h1 className="text-4xl font">Алмас & Арай</h1>
             <h2 className="text-3xl mt-10 font">22. 06. 2024 жыл</h2>
           </div>
           <div className="flex justify-center gap-[120px] mt-[310px]">
@@ -54,7 +54,7 @@ export default function Main() {
             </button>
             <button onClick={scrollToNextSection}>
               <Image
-                className="mr-15"
+                className="mr-15 mt-10"
                 width={90}
                 height={90}
                 src={strelka}
