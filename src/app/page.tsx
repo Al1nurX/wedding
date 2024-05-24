@@ -92,8 +92,6 @@ export default function Home() {
         <p>Мейрамханасы</p>
       </div>
 
-  
-
       <div className="flex justify-center gap-10">
         <Image
           className="mt-5 mb-10"
@@ -102,14 +100,13 @@ export default function Home() {
           src={insta}
           alt="calendar"
         />
-         <Image
+        <Image
           className="mt-5 mb-10 gis"
           height={50}
           width={50}
           src={gis}
           alt="calendar"
         />
-
       </div>
 
       <h2 className="mt-5 mb-5 text-3xl">Той хештегі</h2>
@@ -145,8 +142,12 @@ export default function Home() {
       </div>
       <Attendance />
 
-      <h2 className="mt-5 mb-5 text-3xl text-yellow-500">Мұратовтар әулетті </h2>
-      <p className="text-2xl leading-relaxed mb-10 text-yellow-500">сіздерді күтеді</p>
+      <h2 className="mt-5 mb-5 text-3xl text-yellow-500">
+        Мұратовтар әулетті{" "}
+      </h2>
+      <p className="text-2xl leading-relaxed mb-10 text-yellow-500">
+        сіздерді күтеді
+      </p>
     </div>
   );
 }
