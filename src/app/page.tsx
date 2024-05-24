@@ -5,10 +5,11 @@ import flowerSecond from "../../public/images/flowerSecond.png";
 import calendar from "../../public/images/calendar.png";
 import Attendance from "../components/Attendance";
 import Date from "../components/Date";
-import insta from "../../public/images/insta.png";
-import gis from "../../public/images/gis.png";
 import toi from "../../public/images/toi.png";
 import toi2 from "../../public/images/toi2.png";
+import Social from "../components/social";
+import insta from "../../public/images/insta.png";
+import gis from "../../public/images/gis.jpeg";
 
 export default function Home() {
   return (
@@ -38,9 +39,9 @@ export default function Home() {
 
       <div className="mt-[-50px] text-2xl text-center leading-normal">
         <p>Cіз(дер)ді ұлымыз</p>
-        <h2 className="text-4xl">Жанибек</h2>
+        <h2 className="text-4xl font text-yellow-500">Жанибек</h2>
         <p>пен келініміз</p>
-        <h2 className="text-4xl">Индираның</h2>
+        <h2 className="text-4xl text-yellow-500">Индираның</h2>
         <p>Үйлену тойына арналған</p>
         <p>Салтанатты ақ</p>
         <p>дастарханымыздың</p>
@@ -91,9 +92,24 @@ export default function Home() {
         <p>Мейрамханасы</p>
       </div>
 
-      <div className="flex justify-center gap-5 mt-5 mb-5">
-        <Image className=" " height={100} width={80} src={insta} alt="insta" />
-        <Image className=" " height={30} width={80} src={gis} alt="gis" />
+  
+
+      <div className="flex justify-center gap-10">
+        <Image
+          className="mt-5 mb-10"
+          height={50}
+          width={50}
+          src={insta}
+          alt="calendar"
+        />
+         <Image
+          className="mt-5 mb-10 gis"
+          height={50}
+          width={50}
+          src={gis}
+          alt="calendar"
+        />
+
       </div>
 
       <h2 className="mt-5 mb-5 text-3xl">Той хештегі</h2>
@@ -129,8 +145,8 @@ export default function Home() {
       </div>
       <Attendance />
 
-      <h2 className="mt-5 mb-5 text-3xl">Мұратовтар әулетті </h2>
-      <p className="text-2xl leading-relaxed mb-10">сіздерді күтеді</p>
+      <h2 className="mt-5 mb-5 text-3xl text-yellow-500">Мұратовтар әулетті </h2>
+      <p className="text-2xl leading-relaxed mb-10 text-yellow-500">сіздерді күтеді</p>
     </div>
   );
 }

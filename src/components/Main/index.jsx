@@ -39,8 +39,8 @@ export default function Main() {
     <>
       <div className={`${styles.main} flex flex-col items-center`}>
         <div className="absolute">
-          <div className="flex flex-col text-center text-slate-100 mt-[150px]">
-            <h1 className="text-3xl">Жанибек & Индира</h1>
+          <div className="flex flex-col text-center text-slate-100 mt-[150px] ">
+            <h1 className="text-3xl font-CustomFont">Жанибек & Индира</h1>
             <h2 className="text-xl mt-10">22.06.2024 жыл</h2>
           </div>
           <div className="flex justify-center gap-[120px] mt-[310px]">

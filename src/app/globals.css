@@ -1,14 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Great+Vibes&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "CustomFont";
+  src: url("../assets/classik.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CustomFonts";
+  src: url("../assets/sss.otf") format("truetype");
+}
 body {
-    margin: 0;
-    /* background-image: url('../../public/images/back.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-    color: #fff; */
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  background-image: url("");
+}
+.font {
+  font-family: "CustomFonts";
+}
+
+.color {
+  color: rgba(160, 142, 26, 0.94);
+}
+
+.gis {
+  border-radius: 10px;
 }
