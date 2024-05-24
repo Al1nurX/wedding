@@ -39,9 +39,9 @@ export default function Home() {
 
       <div className="mt-[-50px] text-2xl text-center leading-normal">
         <p>Cіз(дер)ді ұлымыз</p>
-        <h2 className="text-4xl font text-yellow-500">Жанибек</h2>
+        <h2 className="text-4xl font color ">Жанибек</h2>
         <p>пен келініміз</p>
-        <h2 className="text-4xl text-yellow-500">Индираның</h2>
+        <h2 className="text-4xl color font">Индираның</h2>
         <p>Үйлену тойына арналған</p>
         <p>Салтанатты ақ</p>
         <p>дастарханымыздың</p>
@@ -55,7 +55,7 @@ export default function Home() {
         width={140}
         height={140}
       />
-      <div className="mt-[-50px] text-2xl leading-relaxed">
+      <div className="mt-[-50px] text-2xl leading-relaxed color text-center font">
         <p>той салтанаты:</p>
         <p>22 маусым 2024 жыл</p>
         <p>сағат 18:00 БАСТАЛАДЫ</p>
@@ -76,15 +76,15 @@ export default function Home() {
         height={150}
       />
 
-      <div className="mt-[-50px] text-3xl leading-relaxed">
+      <div className="mt-[-50px] text-3xl leading-relaxed font">
         <h2>Той иелері:</h2>
-        <h2>Қайырбек - Марал</h2>
+        <h2 className="color">Қайырбек - Марал</h2>
       </div>
 
       <p className="mt-[50px] text-2xl">Тойға дейін</p>
       <Date />
 
-      <div className="mt-20 text-2xl leading-relaxed">
+      <div className="mt-20 text-3xl leading-relaxed font">
         <p>Мекен-жайымыз:</p>
         <p>Талдықорған қаласы</p>
         <p>Желтоқсан көшесі</p>
@@ -109,13 +109,13 @@ export default function Home() {
         />
       </div>
 
-      <h2 className="mt-5 mb-5 text-3xl">Той хештегі</h2>
+      <h2 className="mt-5 mb-5 text-3xl ">Той хештегі</h2>
       <div className="text-center text-xl leading-normal">
         <p>Ерер инстаграмм немесе басқа</p>
         <p>әлеуметтік желідерде</p>
         <p>бөлісеңіз,сіздерді осы хештегті</p>
         <p>қолдануды сұраймыз</p>
-        <h3 className="text-4xl mt-5">#Жанибек_Индира</h3>
+        <h3 className="text-4xl mt-5 font">#Жанибек_Индира</h3>
       </div>
 
       <h2 className="mt-20 mb-5 text-3xl">Дресс код:</h2>
@@ -128,26 +128,31 @@ export default function Home() {
             src={toi}
             alt="calendar"
           />
+          <div className="mt-[-25px] font">
+            <p>Ерлер қауымы</p>
+            <p>Классикалық</p>
+            <p>Костюм</p>
+          </div>
         </div>
 
         <div>
           <Image
-            className="mt-10 mb-10 "
+            className="mt-10 mb-10 ml-3"
             height={100}
             width={100}
             src={toi2}
             alt="calendar"
           />
+           <div className="mt-[-25px] font">
+          <p>Әйелдер қауымы</p>
+          <p>Кешкі көйлек</p>
+          </div>
         </div>
       </div>
       <Attendance />
 
-      <h2 className="mt-5 mb-5 text-3xl text-yellow-500">
-        Мұратовтар әулетті{" "}
-      </h2>
-      <p className="text-2xl leading-relaxed mb-10 text-yellow-500">
-        сіздерді күтеді
-      </p>
+      <h2 className="mt-5  text-3xl color font">Мұратовтар әулетті </h2>
+      <p className="text-2xl leading-relaxed mb-10 color font">сіздерді күтеді!</p>
     </div>
   );
 }
