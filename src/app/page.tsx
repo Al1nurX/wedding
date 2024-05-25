@@ -15,7 +15,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-
+import form from "../../public/images/form.png";
 import heart from "../../public/images/heart.png";
 
 export default function Home() {
@@ -61,8 +61,8 @@ export default function Home() {
         <h2 className="text-4xl font color ">Алмас</h2>
         <p>пен келініміз</p>
         <h2 className="text-4xl color font">Арай</h2>
-        <p>Үйлену тойына арналған</p>
-        <p>Салтанатты ақ</p>
+        <p>үйлену тойына арналған</p>
+        <p>салтанатты ақ</p>
         <p>дастарханымыздың</p>
         <p>Қадірлі қонағы болуға</p>
         <p>шақырамыз</p>
@@ -79,7 +79,7 @@ export default function Home() {
         data-aos="fade-up"
       >
         <p>той салтанаты:</p>
-        <p>22 шілдке 2024 жыл</p>
+        <p>22 шілде 2024 жыл</p>
         <p>сағат 18:00 БАСТАЛАДЫ</p>
       </div>
 
@@ -90,6 +90,7 @@ export default function Home() {
         src={calendar}
         alt="calendar"
       />
+
       <Image
         className="heart"
         height={25}
@@ -146,10 +147,10 @@ export default function Home() {
         </a>
       </div>
 
-      <h2 className="mt-5 mb-5 text-3xl ">Той хештегі</h2>
+      <h2 className="mt-5 mb-5 text-3xl ">Той хештегі:</h2>
       <div className="text-center text-xl leading-normal" data-aos="fade-up">
-        <p>Ерер инстаграмм немесе басқа</p>
-        <p>әлеуметтік желідерде</p>
+        <p>Егер инстаграм немесе басқа</p>
+        <p>әлеуметтік желілерде</p>
         <p>бөлісеңіз,сіздерді осы хештегті</p>
         <p>қолдануды сұраймыз</p>
         <h3 className="text-4xl mt-5 font">#Алмас_Арай</h3>
@@ -188,7 +189,7 @@ export default function Home() {
       </div>
       <Attendance />
 
-      <h2 className="mt-5  text-3xl color font">Оспановтар әулетті </h2>
+      <h2 className="mt-5  text-3xl color font">Оспановтар әулеті </h2>
       <p className="text-2xl leading-relaxed mb-10 color font">
         сіздерді күтеді!
       </p>

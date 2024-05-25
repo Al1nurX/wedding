@@ -54,13 +54,13 @@ export default function Main() {
             </button>
             <button onClick={scrollToNextSection}>
               <Image
-                className="mr-15 mt-10"
-                width={90}
-                height={90}
+                className="mr-15 mt-5"
+                width={60}
+                height={60}
                 src={strelka}
                 alt="scroll down"
               />
-              <div className="text-white">
+              <div className="text-white mr-5 ">
                 <p>Төмен</p>
                 <p>Түсіріңіз</p>
               </div>
