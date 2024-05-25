@@ -19,7 +19,7 @@ export default function Attendance() {
 
     setLoading(true);
     fetch(
-      "https://script.google.com/macros/s/AKfycbwqZkHbKEkoUVo_dHdWlsfuZRM09tvNNQU_2b-jrsNkdIJbzI-9uevB2atQf9roAsZqSA/exec",
+      "https://script.google.com/macros/s/AKfycbxMuxhygxfyhZBeXU5OJ0JEU3Ks3gNtg6mudoDntZVpg0A9kYJO_admuCK59bGz30qa/exec",
       {
         method: "POST",
         body: formDatab,

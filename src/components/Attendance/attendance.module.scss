@@ -3,7 +3,7 @@
   flex-direction: column;
   text-align: center;
   margin-top: 30px;
-  font-family: 'Times New Roman', Times, serif; // Adjust font family if needed
+  font-family: "Times New Roman", Times, serif; // Adjust font family if needed
 
   .form {
     display: flex;
@@ -62,7 +62,7 @@
     }
 
     input[type="radio"]:checked {
-      background-color: #000000; // Black fill when checked
+      background-color: #b9a22d; // Black fill when checked
     }
   }
 
@@ -71,7 +71,7 @@
     padding: 10px;
     border-radius: 10px;
     border: none;
-    background-color:#7b6c20; // Gold background color
+    background-color: #7b6c20; // Gold background color
     color: white; // Black text color
     font-size: 18px; // Adjusted font size for button
     cursor: pointer;
