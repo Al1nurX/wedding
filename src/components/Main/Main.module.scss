@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "srift";
-  src: url("../../assets/srift.otf") format("truetype");
+  font-family: "fetridge";
+  src: url("../../assets/fetridge.otf") format("truetype");
 }
 
 @keyframes shimmer {
@@ -10,15 +10,6 @@
   100% {
     background-position: 200px 0;
   }
-}
-
-.main {
-  background-image: url("../../../public/images/marryImage.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
 }
 
 .shimmer-text {
@@ -40,14 +31,4 @@
 
 .animate-spin {
   animation: spin 10s linear infinite;
-}
-
-.muzik {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
 }

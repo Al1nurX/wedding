@@ -13,8 +13,8 @@ export default function Musik() {
     >
       <Image
         className="ml-20"
-        height={24}
-        width={50}
+        height={50}
+        width={100}
         src={proigr}
         alt="musik"
       />
